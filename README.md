@@ -1,6 +1,6 @@
-# Steps
+# Steps To Create an Python Windows Service
  
-## (1) Copy Paste These Codes to a Python File to let's say server.py
+## (1) Copy Paste These Codes to a Python File (e.g. server.py)
 ```
 import servicemanager
 import sys
@@ -112,7 +112,7 @@ C:\Users\Pushpender\Desktop>python server.py remove    # For removing installed 
 * If you want to set the StartUp= Automatic (Delayed), then use `--startup=delayed`, while installing service
 * Use `--startup` argument before `install` argument
 
-## Integrate Windows server with Inno Setup Builder
+## (4) Integrate Windows server with Inno Setup Builder
 * If you want to create a Installer which will Install your service at Installion process & will remove it at Uninstall, then
 * Add these block of code in your `script.iss`
 ```

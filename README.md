@@ -111,6 +111,8 @@ C:\Users\Pushpender\Desktop>python server.py remove    # For removing installed 
 * If you want to set the StartUp= Manaull, then don't use `--startup=auto`, while installing service
 * If you want to set the StartUp= Automatic (Delayed), then use `--startup=delayed`, while installing service
 * Use `--startup` argument before `install` argument
+* If you have used any kind of paths in your code such as "/logging/logs.txt", then Make sure to use full/absolute paths in your code, e.g "C:/logging/logs.txt". Because windows will going to call your service from any other path
+* Use this command in order to run your service in debug mode: `server.exe debug`
 
 ## (4) Integrate Windows server with Inno Setup Builder
 * If you want to create a Installer which will Install your service at Installion process & will remove it at Uninstall, then
